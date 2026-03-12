@@ -1,0 +1,39 @@
+# Go Calculator API
+
+REST API калькулятора на Go.
+
+## Stack
+
+- Go
+- Echo
+- GORM
+- SQLite
+- Docker
+- Govaluate
+
+## Endpoints
+
+GET /calculations  
+POST /calculations  
+PATCH /calculations/:id  
+DELETE /calculations/:id  
+
+## Example request
+
+POST /calculations
+
+{
+  "expression": "2+2*5"
+}
+
+Response
+
+{
+  "id": "...",
+  "expression": "2+2*5",
+  "result": "12"
+}
+
+## Run
+
+go run ./cmd
